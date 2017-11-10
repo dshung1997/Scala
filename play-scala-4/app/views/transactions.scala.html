@@ -1,0 +1,70 @@
+@(sendingTrans: Seq[models.UserTransaction], receivingTrans: Seq[models.UserTransaction])
+
+<div class="container">
+
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        @if(sendingTrans.length != 0){
+            <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Amount</th>
+                <th>Date</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+
+            @for((tran, id) <- sendingTrans.zipWithIndex){
+            <tr>
+                <td>@(id+1)</td>
+                <td>@tran.sender</td>
+                <td>@tran.recipient</td>
+                <td>@tran.amount</td>
+                <td>@tran.date</td>
+
+            </tr>
+            }
+
+            </tbody>
+        </table>
+        }
+
+        @if(receivingTrans.length != 0){
+            <table class="table table-stripped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Amount</th>
+                <th>Date</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+
+            @for((tran, id) <- receivingTrans.zipWithIndex){
+            <tr>
+                <td>@(id+1)</td>
+                <td>@tran.sender</td>
+                <td>@tran.recipient</td>
+                <td>@tran.amount</td>
+                <td>@tran.date</td>
+
+            </tr>
+            }
+
+            </tbody>
+        </table>
+        }
+    </div>
+   <div class="col-md-4"></div>
+</div>
+
+

@@ -1,0 +1,52 @@
+@(userJson: play.api.libs.json.JsValue)
+
+<div class="container">
+
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Full name</td>
+                    <td>@((userJson \ "fullname").as[String])</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>@((userJson \ "email").as[String])</td>
+                </tr>
+
+                <tr>
+                    <td>Display name</td>
+                    <td>@((userJson \ "displayname").as[String])</td>
+                </tr>
+
+                <tr>
+                    <td>Phone number</td>
+                    <td>@((userJson \ "phonenumber").as[String])</td>
+                </tr>
+
+                <tr>
+                    <td>Code</td>
+                    <td>@((userJson \ "code").as[String])</td>
+                </tr>
+
+                <tr>
+                    <td>Balance</td>
+                    <td>@((userJson \ "balance").as[String])</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+   <div class="col-md-4"></div>
+</div>
+
+

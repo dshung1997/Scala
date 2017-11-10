@@ -1,0 +1,7 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/Workspace/play-scala-4/conf/logback.xml,/home/Workspace/play-scala-4/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/Workspace/play-scala-4/conf/evolutions,/home/Workspace/play-scala-4/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/Workspace/play-scala-4/conf/application.conf,/home/Workspace/play-scala-4/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/Workspace/play-scala-4/conf/routes,/home/Workspace/play-scala-4/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/Workspace/play-scala-4/conf/evolutions/fintech_schema,/home/Workspace/play-scala-4/target/scala-2.11/classes/evolutions/fintech_schema)[0m
+[0m[[0mdebug[0m] [0m	(/home/Workspace/play-scala-4/conf/evolutions/fintech_schema/1.sql,/home/Workspace/play-scala-4/target/scala-2.11/classes/evolutions/fintech_schema/1.sql)[0m

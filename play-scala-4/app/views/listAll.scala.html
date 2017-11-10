@@ -1,0 +1,23 @@
+@(page: String, isLoggedIn: Boolean, user: models.UserInfo, users: Seq[models.UserInfo])
+
+@main(page, isLoggedIn, user) {
+
+<h1>Users</h1>
+<table>
+    <thead>
+    <tr><th>Username</th><th>Password</th>
+    </thead>
+    <tbody>
+    @for(u <- users) {
+    <tr>
+        <td>@u.email</td>
+
+        <td>@u.fullname</td>
+        <td>@u.displayname</td>
+        <td>@u.phonenumber</td>
+    </tr>
+    }
+    </tbody>
+</table>
+
+}
